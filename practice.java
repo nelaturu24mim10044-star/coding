@@ -64,21 +64,16 @@
 // public class CharFreqEasy2 {
 //     public static void main(String[] args) {
 //         String s = "programming";
-
 //         for (int i = 0; i < s.length(); i++) {
 //             char c = s.charAt(i);
-
 //             // Skip printed characters
 //             if (s.indexOf(c) != i) continue;
-
 //             int count = 0;
-
 //             // Count occurrences
 //             for (int j = 0; j < s.length(); j++) {
 //                 if (s.charAt(j) == c)
 //                     count++;
 //             }
-
 //             System.out.println(c + " = " + count);
 //         }
 //     }
@@ -124,88 +119,86 @@
 
 
 //9Q.
-public class RemoveDuplicatesEasy3 {
-    public static void main(String[] args) {
-        String s = "programming";
-        String result = "";
+// public class RemoveDuplicatesEasy3 {
+//     public static void main(String[] args) {
+//         String s = "programming";
+//         String result = "";
+//         for (int i = 0; i < s.length(); i++) {
+//             char c = s.charAt(i);
 
-        for (int i = 0; i < s.length(); i++) {
-            char c = s.charAt(i);
-
-            if (result.indexOf(c) == -1) {
-                result += c;
-            }
-        }
-
-        System.out.println(result);
-    }
-}
+//             if (result.indexOf(c) == -1) {
+//                 result += c;
+//             }
+//         }
+//         System.out.println(result);
+//     }
+// }
 
 
 
-10Q.
-public class LargestWordEasy1 {
-    public static void main(String[] args) {
-        String s = "Java is a powerful language";
-        String[] words = s.split(" ");
+// 10Q.
+// public class LargestWordEasy1 {
+//     public static void main(String[] args) {
+//         String s = "Java is a powerful language";
+//         String[] words = s.split(" ");
+//         String largest = "";
+//         for (String w : words) {
+//             if (w.length() > largest.length())
+//                 largest = w;
+//         }
+//         System.out.println("Largest Word: " + largest);
+//     }
+// }
 
-        String largest = "";
 
-        for (String w : words) {
-            if (w.length() > largest.length())
-                largest = w;
-        }
 
-        System.out.println("Largest Word: " + largest);
-    }
-}
+// 11Q.
+// public class ToggleCharacters {
+//     public static void main(String[] args) {
+//         String s = "HeLLo";
+//         StringBuilder sb = new StringBuilder();
+//         for (char c : s.toCharArray()) {
+//             if (Character.isUpperCase(c))
+//                 sb.append(Character.toLowerCase(c));
+//             else
+//                 sb.append(Character.toUpperCase(c));
+//         }
+//         System.out.println(sb.toString());
+//     }
+// }
 
-11Q.
-public class ToggleCharacters {
-    public static void main(String[] args) {
-        String s = "HeLLo";
-        StringBuilder sb = new StringBuilder();
 
-        for (char c : s.toCharArray()) {
-            if (Character.isUpperCase(c))
-                sb.append(Character.toLowerCase(c));
-            else
-                sb.append(Character.toUpperCase(c));
-        }
 
-        System.out.println(sb.toString());
-    }
-}
-12Q.
-  public class CountTypes {
-    public static void main(String[] args) {
-        String s = "Hello@123";
-        int letters = 0, digits = 0, special = 0;
+// 12Q.
+//   public class CountTypes {
+//     public static void main(String[] args) {
+//         String s = "Hello@123";
+//         int letters = 0, digits = 0, special = 0;
+//         for (char c : s.toCharArray()) {
+//             if (Character.isLetter(c)) letters++;
+//             else if (Character.isDigit(c)) digits++;
+//             else special++;
+//         }
+//         System.out.println("Letters = " + letters);
+//         System.out.println("Digits = " + digits);
+//         System.out.println("Special = " + special);
+//     }
+// }
 
-        for (char c : s.toCharArray()) {
-            if (Character.isLetter(c)) letters++;
-            else if (Character.isDigit(c)) digits++;
-            else special++;
-        }
 
-        System.out.println("Letters = " + letters);
-        System.out.println("Digits = " + digits);
-        System.out.println("Special = " + special);
-    }
-}
 
-13Q.
-public class LongestCommonPrefix {
-    public static void main(String[] args) {
-        String[] arr = {"flower","flow","flight"};
 
-        String prefix = arr[0];
-        for (int i = 1; i < arr.length; i++) {
-            while (!arr[i].startsWith(prefix)) {
-                prefix = prefix.substring(0, prefix.length() - 1);
-            }
-        }
+// 13Q.
+// public class LongestCommonPrefix {
+//     public static void main(String[] args) {
+//         String[] arr = {"flower","flow","flight"};
+//         String prefix = arr[0];
+//         for (int i = 1; i < arr.length; i++) {
+//             while (!arr[i].startsWith(prefix)) {
+//                 prefix = prefix.substring(0, prefix.length() - 1);
+//             }
+//         }
+//         System.out.println("Longest Common Prefix: " + prefix);
+//     }
+// }  
 
-        System.out.println("Longest Common Prefix: " + prefix);
-    }
-}  
