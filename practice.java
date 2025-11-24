@@ -1,3 +1,5 @@
+//DAY 1
+
 //1Q.
 // public class CountVowels {
 //     public static void main(String[] args) {
@@ -202,3 +204,207 @@
 //     }
 // }  
 
+
+//DAY 2
+
+// Q1.
+// public class SumMaxMin {
+//     public static void main(String[] args) {
+//         int[] arr = {1, 2, 3, 4};
+//         int sum = 0;
+//         int max = arr[0];
+//         int min = arr[0];
+//         for (int n : arr) {
+//             sum += n;
+//             if (n > max) max = n;
+//             if (n < min) min = n;
+//         }
+//         System.out.println("Sum = " + sum);
+//         System.out.println("Max = " + max);
+//         System.out.println("Min = " + min);
+//     }
+// }
+
+
+
+
+// Q3.
+// public class CountOccurrences {
+//     public static void main(String[] args) {
+//         int[] arr = {1, 2, 2, 3, 2};
+//         int element = 2;
+//         int count = 0;
+//         for (int n : arr) {
+//             if (n == element) count++;
+//         }
+//         System.out.println("Count = " + count);
+//     }
+// }
+
+
+
+
+
+// Q4.
+// import java.util.*;
+
+// public class RemoveDuplicates {
+//     public static void main(String[] args) {
+//         int[] arr = {1, 1, 2, 3, 3};
+//         Set<Integer> set = new HashSet<>();
+//         for (int n : arr) set.add(n);
+//         System.out.println(set);
+//     }
+// }
+
+
+
+
+// Q5.
+//   public class CheckExists {
+//     public static void main(String[] args) {
+//         int[] tuple = {1, 3, 5, 7};
+//         int element = 3;
+//         boolean exists = false;
+//         for (int n : tuple) {
+//             if (n == element) exists = true;
+//         }
+
+//         System.out.println("true or false " + exists);
+//     }
+// }
+
+
+
+
+// Q8.
+// import java.util.*;
+
+// public class SecondLargest {
+//     public static void main(String[] args) {
+//         int[] arr = {12, 45, 33, 27};
+//         Arrays.sort(arr);
+//         int secondLargest = arr[arr.length - 2];
+//         System.out.println("Second Largest = " + secondLargest);
+//     }
+// }
+
+
+
+
+// Q9.
+// import java.util.*;
+
+// public class SetIntersection {
+//     public static void main(String[] args) {
+//         Set<Integer> s1 = new HashSet<>(Arrays.asList(1, 2, 3));
+//         Set<Integer> s2 = new HashSet<>(Arrays.asList(2, 3, 4));
+//         s1.retainAll(s2);
+//         System.out.println("Intersection = " + s1);
+//     }
+// }
+
+
+
+
+
+// Q10.
+// import java.util.*;
+
+// public class RemoveIfExists {
+//     public static void main(String[] args) {
+//         Set<Integer> set = new HashSet<>(Arrays.asList(10, 20, 30));
+//         set.remove(40);
+//         System.out.println(set);
+//     }
+// }
+
+
+
+
+//  Q11.
+//   import java.util.*;
+
+// public class ReverseListAddFront {
+//     public static void main(String[] args) {
+//         int[] arr = {10, 20, 30, 40};
+//         List<Integer> reversed = new ArrayList<>();
+//         for (int n : arr) {
+//             reversed.add(0, n);  // add at the start
+//         }
+
+//         System.out.println(reversed);
+//     }
+// }
+
+
+
+
+
+// Q12.
+// import java.util.*;
+
+// public class UniqueCount {
+//     public static void main(String[] args) {
+//         int[] arr = {1, 2, 2, 3, 4, 4, 5};
+//         Set<Integer> set = new HashSet<>();
+//         for (int n : arr) set.add(n);
+//         System.out.println("Unique count = " + set.size());
+//     }
+// }
+
+
+
+
+// Q13.
+//   import java.util.*;
+
+// public class SquaresTuple {
+//     public static void main(String[] args) {
+//         int n = 5;
+//         int[] squares = new int[n];
+//         for (int i = 1; i <= n; i++) {
+//             squares[i - 1] = i * i;
+//         }
+
+//         System.out.println(Arrays.toString(squares));
+//     }
+// }
+
+
+
+
+
+// Q14.
+// public class PairSum {
+//     public static void main(String[] args) {
+//         int[] arr = {1, 4, 2, 3, 5};
+//         int target = 6;
+//         for (int i = 0; i < arr.length; i++) {
+//             for (int j = i + 1; j < arr.length; j++) {
+//                 if (arr[i] + arr[j] == target) {
+//                     System.out.println("(" + arr[i] + ", " + arr[j] + ")");
+//                 }
+//             }
+//         }
+//     }
+// }
+
+
+
+
+  
+
+// Q15.
+// import java.util.*;
+
+// public class SameElements {
+//     public static void main(String[] args) {
+//         int[] a = {1, 2, 3};
+//         int[] b = {3, 2, 1};
+//         Arrays.sort(a);
+//         Arrays.sort(b);
+//         boolean same = Arrays.equals(a, b);
+//         System.out.println("Same elements = " + same);
+//     }
+// }
