@@ -15,7 +15,7 @@
 
 
 //2Q.
-// public class CountWordsEasy1 {
+// public class CountWords {
 //     public static void main(String[] args) {
 //         String s = "Hello this is sai";
 //         String[] words = s.split(" ");
@@ -27,7 +27,7 @@
 
 
 //3Q.
-// public class PalindromeEasy1 {
+// public class Palindrome {
 //     public static void main(String[] args) {
 //         String s = "madam";
 //         String rev = new StringBuilder(s).reverse().toString();
@@ -63,7 +63,7 @@
 
 
 //6Q.
-// public class CharFreqEasy2 {
+// public class CharFreq {
 //     public static void main(String[] args) {
 //         String s = "programming";
 //         for (int i = 0; i < s.length(); i++) {
@@ -82,7 +82,7 @@
 // }
 
 // 7Q.
-// public class FirstNonRepeatEasy1 {
+// public class FirstNonRepeat {
 //     public static void main(String[] args) {
 //         String s = "saikrishna";
 //         for (int i = 0; i < s.length(); i++) {
@@ -104,7 +104,7 @@
 
 //8Q.
 // import java.util.Arrays;
-// public class AnagramEasy1 {
+// public class Anagram {
 //     public static void main(String[] args) {
 //         String s1 = "silent";
 //         String s2 = "listen";
@@ -121,7 +121,7 @@
 
 
 //9Q.
-// public class RemoveDuplicatesEasy3 {
+// public class RemoveDuplicates {
 //     public static void main(String[] args) {
 //         String s = "programming";
 //         String result = "";
@@ -139,7 +139,7 @@
 
 
 // 10Q.
-// public class LargestWordEasy1 {
+// public class LargestWord {
 //     public static void main(String[] args) {
 //         String s = "Java is a powerful language";
 //         String[] words = s.split(" ");
@@ -408,3 +408,233 @@
 //         System.out.println("Same elements = " + same);
 //     }
 // }
+
+//DAY 3
+Q1.
+public class CountVowels {
+    public static int countVowels(String s) {
+        if (s == null) return 0;
+        int count = 0;
+        String lower = s.toLowerCase();
+        for (int i = 0; i < lower.length(); i++) {
+            char c = lower.charAt(i);
+            if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') count++;
+        }
+        return count;
+    }
+
+    public static void main(String[] args) {
+        String input = "saikrishnareddy";
+        System.out.println("Input: " + input);
+        System.out.println("Vowel count: " + countVowels(input)); 
+    }
+}
+
+Q2.
+public class AreaOverload {
+    public static double area(double radius) {
+        return Math.PI * radius * radius;
+    }
+public static double area(double width, double height) {
+        return width * height;
+    }
+    public static double areaTriangle(double base, double height, boolean triangle) {
+        // using separate signature to avoid ambiguity with rectangle; 
+        // caller sets triangle=true to use triangle formula
+        return 0.5 * base * height;
+    }
+
+    public static void main(String[] args) {
+        System.out.println("Circle r=3 -> " + area(3.0));
+        System.out.println("Rectangle 4x5 -> " + area(4.0, 5.0));
+        System.out.println("Triangle base=4 height=5 -> " + areaTriangle(4.0, 5.0, true));
+    }
+}
+
+
+Q3.
+public class LongestWord {
+    public static String longestWord(String sentence) {
+        String[] words = sentence.split(" ");
+        String longest = "";
+
+        for (String w : words) {
+            if (w.length() > longest.length()) {
+                longest = w;
+            }
+        }
+        return longest;
+    }
+
+    public static void main(String[] args) {
+        String s = "it is Thusday";
+        System.out.println("Longest word: " + longestWord(s));
+    }
+}
+
+Q4.
+public class RecursiveFactorial {
+    public static long factorial(int n) {
+        if (n < 0) throw new IllegalArgumentException("n must be >= 0");
+        if (n == 0 || n == 1) return 1;
+        return n * factorial(n - 1);
+    }
+
+    public static void main(String[] args) {
+        int n = 10;
+        System.out.println(n + "! = " + factorial(n)); // 3628800
+    }
+}
+
+
+Q5.
+import java.util.Arrays;
+
+public class SortArray {
+    public static void sortArray(int[] arr) {
+        Arrays.sort(arr);   // built-in sorting
+    }
+
+    public static void main(String[] args) {
+        int[] a = {5, 3, 8, 4, 2};
+        sortArray(a);
+        System.out.println(Arrays.toString(a));
+    }
+}
+
+
+
+Q6.
+public class RecursiveFactorial {
+    public static long factorial(int n) {
+        if (n < 0) throw new IllegalArgumentException("n must be >= 0");
+        if (n == 0 || n == 1) return 1;
+        return n * factorial(n - 1);
+    }
+
+    public static void main(String[] args) {
+        int n = 10;
+        System.out.println(n + "! = " + factorial(n));
+    }
+}
+
+
+
+
+Q7.
+public class RecursiveFibonacci {
+
+    public static long fib(int n) {
+        if (n < 0) throw new IllegalArgumentException("n must be >= 0");
+        if (n == 0) return 0;
+        if (n == 1) return 1;
+        return fib(n - 1) + fib(n - 2);
+    }
+    public static void main(String[] args) {
+        int n = 10;
+        System.out.println("fib(" + n + ") = " + fib(n)); // 55
+    }
+}
+
+
+Q8.
+public class BinarySearchEasy1 {
+    public static int binarySearch(int[] arr, int target, int low, int high) {
+        if (low > high) 
+            return -1;
+
+        int mid = (low + high) / 2;
+
+        if (arr[mid] == target)
+            return mid;
+
+        if (target < arr[mid])
+            return binarySearch(arr, target, low, mid - 1);
+
+        return binarySearch(arr, target, mid + 1, high);
+    }
+
+    public static void main(String[] args) {
+        int[] arr = {2, 4, 6, 8, 10, 12};
+        System.out.println(binarySearch(arr, 10, 0, arr.length - 1));
+    }
+}
+
+
+Q9.
+ public class Power {
+    public static int power(int base, int exp) {
+        if (exp == 0) return 1;
+        return base * power(base, exp - 1);
+    }
+
+    public static void main(String[] args) {
+        System.out.println(power(2, 5));
+    }
+}
+
+
+Q10.
+public class CountOccurrences {
+
+    public static int count(int[] arr, int target, int index) {
+        if (index == arr.length)
+            return 0;  
+
+        int add = (arr[index] == target) ? 1 : 0;
+        return add + count(arr, target, index + 1);
+    }
+
+    public static void main(String[] args) {
+        int[] arr = {1, 2, 2, 1, 3, 2};
+        System.out.println(count(arr, 2, 0));  
+    }
+}
+
+
+
+Q11.
+import java.util.*;
+
+public class PowerSet {
+
+    public static void subsets(String s, int index, String current) {
+        if (index == s.length()) {
+            System.out.println(current);  
+            return;
+        }
+        subsets(s, index + 1, current);
+        subsets(s, index + 1, current + s.charAt(index));
+    }
+    public static void main(String[] args) {
+        subsets("abc", 0, "");
+    }
+}
+
+
+
+Q12.
+public class Permutation {
+    public static void permute(char[] arr, int index) {
+        if (index == arr.length) {
+            System.out.println(new String(arr));
+            return;
+        }
+
+        for (int i = index; i < arr.length; i++) {
+            char temp = arr[index];
+            arr[index] = arr[i];
+            arr[i] = temp;
+
+            permute(arr, index + 1);
+            temp = arr[index];
+            arr[index] = arr[i];
+            arr[i] = temp;
+        }
+    }
+
+    public static void main(String[] args) {
+        String s = "abc";
+        permute(s.toCharArray(), 0);
+    }
+}
