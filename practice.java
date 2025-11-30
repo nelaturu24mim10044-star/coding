@@ -640,59 +640,383 @@
 // }
 
 
-DAY 4
+// DAY 4
 
-Q1.
+// Q1.
 
-public class MarksDemo {
-    public static void main(String[] args) {
-        Marks m = new Marks();
-        m.setMaths(85);
-        m.setScience(90);
-        m.setEnglish(78);
+// public class Marks1 {
+//     public static void main(String[] args) {
+//         Marks m = new Marks();
+//         m.setMaths(85);
+//         m.setScience(90);
+//         m.setEnglish(78);
 
-        System.out.println("Maths: " + m.getMaths());
-        System.out.println("Science: " + m.getScience());
-        System.out.println("English: " + m.getEnglish());
+//         System.out.println("Maths: " + m.getMaths());
+//         System.out.println("Science: " + m.getScience());
+//         System.out.println("English: " + m.getEnglish());
 
-        System.out.println("Total Marks: " + m.totalMarks());
-        System.out.println("Average Marks: " + m.averageMarks());
-    }
-}
+//         System.out.println("Total Marks: " + m.totalMarks());
+//         System.out.println("Average Marks: " + m.averageMarks());
+//     }
+// }
 
-class Marks {
-    private int maths;
-    private int science;
-    private int english;
+// class Marks {
+//     private int maths;
+//     private int science;
+//     private int english;
 
-    public void setMaths(int maths) {
-        if (isValid(maths)) this.maths = maths;
-        else System.out.println("not in 0-100.");
-    }
+//     public void setMaths(int maths) {
+//         if (isValid(maths)) this.maths = maths;
+//         else System.out.println("not in 0-100.");
+//     }
 
-    public void setScience(int science) {
-        if (isValid(science)) this.science = science;
-        else System.out.println("not in 0-100.");
-    }
+//     public void setScience(int science) {
+//         if (isValid(science)) this.science = science;
+//         else System.out.println("not in 0-100.");
+//     }
 
-    public void setEnglish(int english) {
-        if (isValid(english)) this.english = english;
-        else System.out.println("not in 0-100.");
-    }
+//     public void setEnglish(int english) {
+//         if (isValid(english)) this.english = english;
+//         else System.out.println("not in 0-100.");
+//     }
 
-    public int getMaths() { return maths; }
-    public int getScience() { return science; }
-    public int getEnglish() { return english; }
+//     public int getMaths() { return maths; }
+//     public int getScience() { return science; }
+//     public int getEnglish() { return english; }
 
-    private boolean isValid(int mark) {
-        return mark >= 0 && mark <= 100;
-    }
+//     private boolean isValid(int mark) {
+//         return mark >= 0 && mark <= 100;
+//     }
 
-    public int totalMarks() {
-        return maths + science + english;
-    }
+//     public int totalMarks() {
+//         return maths + science + english;
+//     }
 
-    public double averageMarks() {
-        return totalMarks() / 3.0;
-    }
-}
+//     public double averageMarks() {
+//         return totalMarks() / 3.0;
+//     }
+// }
+
+// Q2.
+// public class Book2 {
+//     public static void main(String[] args) {
+//         Book b = new Book();
+//         b.setTitle("Introduction to Java");
+//         b.setPrice(399.50);
+
+//         b.showDetails();
+//     }
+// }
+
+// class Book {
+//     private String title;
+//     private double price;
+
+//     public String getTitle() { return title; }
+//     public double getPrice() { return price; }
+
+//     public void setTitle(String title) {
+//         if (title != null && !title.trim().isEmpty()) this.title = title;
+//         else System.out.println("Invalid title.");
+//     }
+
+//     public void setPrice(double price) {
+//         if (price >= 0) this.price = price;
+//         else System.out.println("Price cannot be negative.");
+//     }
+
+//     public void showDetails() {
+//         System.out.println("Book Title: " + title);
+//         System.out.println("Price: " + price);
+//     }
+// }
+
+
+
+
+
+  
+
+// Q3.
+// public class BankAccount3 {
+//     public static void main(String[] args) {
+
+//         BankAccount acc = new BankAccount(500);
+
+//         acc.deposit(200);      
+//         acc.withdraw(100);     
+//         acc.withdraw(1000);    
+
+//         System.out.println("Final Balance: " + acc.getBalance());
+//     }
+// }
+
+// class BankAccount {
+//     private double balance;
+
+//     BankAccount(double amount) {
+//         if (amount >= 0)
+//             balance = amount;
+//         else {
+//             balance = 0;
+//             System.out.println("Invalid starting amount. Balance set to 0.");
+//         }
+//     }
+
+//     void deposit(double amount) {
+//         if (amount > 0)
+//             balance += amount;
+//         else
+//             System.out.println("Deposit must be positive.");
+//     }
+
+//     void withdraw(double amount) {
+//         if (amount <= 0) {
+//             System.out.println("Withdraw must be positive.");
+//         } 
+//         else if (amount > balance) {
+//             System.out.println("Not enough balance!");
+//         } 
+//         else {
+//             balance -= amount;
+//         }
+//     }
+//     double getBalance() {
+//         return balance;
+//     }
+// }
+
+
+
+
+
+
+  
+// Q4.
+// public class Employee4 {
+//     public static void main(String[] args) {
+//         Employee emp = new Employee("Alice");
+//         emp.setSalary(5000); 
+//         System.out.println(emp.getName() + "'s monthly salary: " + emp.getSalary());
+//         System.out.println("Annual Salary: " + emp.calculateAnnualSalary());
+//     }
+// }
+
+// class Employee {
+//     private String name;
+//     private double baseSalary; 
+
+//     public Employee(String name) {
+//         this.name = name;
+//         this.baseSalary = 0.0;
+//     }
+
+//     public String getName() { return name; }
+
+//     public void setSalary(double salary) {
+//         if (salary >= 0) this.baseSalary = salary;
+//         else System.out.println("Salary cannot be negative.");
+//     }
+
+//     public double getSalary() {
+//         return baseSalary;
+//     }
+
+//     public double calculateAnnualSalary() {
+//         return baseSalary * 12;
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+  
+// Q5.
+// public class ATM5 {
+//     public static void main(String[] args) {
+//         ATM atm = new ATM();
+//         atm.setPin("123");      
+//         atm.setPin("abcd");     
+//         atm.setPin("0456"); 
+//         atm.getPin();        
+//     }
+// }
+
+// class ATM {
+//     private String pin;
+//     public void setPin(String pin) {
+//         if (pin != null && pin.matches("\\d{4}")) {
+//             this.pin = pin;
+//             System.out.println("PIN set successfully.");
+//         } else {
+//             System.out.println("Invalid PIN. PIN must be exactly 4 digits.");
+//         }
+//     }
+//     public void getPin() {
+//         if (pin == null) {
+//             System.out.println("No PIN set.");
+//         } else {
+//             System.out.println("PIN is secured");
+//         }
+//     }
+// }
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+//   Q6.
+// public class Animal6 {
+//     public static void main(String[] args) {
+//         Cat kitty = new Cat();
+//         kitty.eat();
+//         kitty.meow(); 
+//     }
+// }
+
+// class Animal {
+//     public void eat() {
+//         System.out.println("The animal is eating.");
+//     }
+// }
+
+// class Cat extends Animal {
+//     public void meow() {
+//         System.out.println("Meow! The cat is meowing.");
+//     }
+// }
+
+
+
+
+
+
+
+
+
+// Q7.
+// public class Manager7 {
+//     public static void main(String[] args) {
+
+//         Manager m = new Manager("sai", 101, 50000, "Sales");
+
+//         m.displayDetails();
+//     }
+// }
+// class Employee {
+//     String name;
+//     int id;
+//     double salary;
+
+//     Employee(String name, int id, double salary) {
+//         this.name = name;
+//         this.id = id;
+//         this.salary = salary;
+//     }
+//     public void displayDetails() {
+//         System.out.println("Employee Name: " + name);
+//         System.out.println("Employee ID: " + id);
+//         System.out.println("Salary: " + salary);
+//     }
+// }
+// class Manager extends Employee {
+//     String department;
+
+//     Manager(String name, int id, double salary, String department) {
+//         super(name, id, salary); 
+//         this.department = department;
+//     }
+
+//     @Override
+//     public void displayDetails() {
+//         System.out.println("Manager Name: " + name);
+//         System.out.println("Manager ID: " + id);
+//         System.out.println("Salary: " + salary);
+//         System.out.println("Department: " + department);
+//     }
+// }
+
+
+
+
+
+
+
+// Q8.
+// public class PersonDemo {
+//     public static void main(String[] args) {
+
+//         Student s = new Student("Arun", 19, "S101", "Computer Science");
+//         Teacher t = new Teacher("Meera", 35, "Maths", 45000);
+
+//         s.display();
+//         System.out.println("----------");
+//         t.display();
+//     }
+// }
+
+// class Person {
+//     String name;
+//     int age;
+
+//     Person(String name, int age) {
+//         this.name = name;
+//         this.age = age;
+//     }
+
+
+//     public void display() {
+//         System.out.println("Name: " + name);
+//         System.out.println("Age: " + age);
+//     }
+// }
+
+
+// class Student extends Person {
+//     String rollNumber;
+//     String course;
+
+//     Student(String name, int age, String rollNumber, String course) {
+//         super(name, age);
+//         this.rollNumber = rollNumber;
+//         this.course = course;
+//     }
+  
+//     @Override
+//     public void display() {
+//         System.out.println("Student Name: " + name);
+//         System.out.println("Age: " + age);
+//         System.out.println("Roll Number: " + rollNumber);
+//         System.out.println("Course: " + course);
+//     }
+// }
+
+// class Teacher extends Person {
+//     String subject;
+//     double salary;
+
+//     Teacher(String name, int age, String subject, double salary) {
+//         super(name, age);
+//         this.subject = subject;
+//         this.salary = salary;
+//     }
+
+//     @Override
+//     public void display() {
+//         System.out.println("Teacher Name: " + name);
+//         System.out.println("Age: " + age);
+//         System.out.println("Subject: " + subject);
+//         System.out.println("Salary: " + salary);
+//     }
+// }
