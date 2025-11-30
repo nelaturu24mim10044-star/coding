@@ -639,3 +639,60 @@
 //     }
 // }
 
+
+DAY 4
+
+Q1.
+
+public class MarksDemo {
+    public static void main(String[] args) {
+        Marks m = new Marks();
+        m.setMaths(85);
+        m.setScience(90);
+        m.setEnglish(78);
+
+        System.out.println("Maths: " + m.getMaths());
+        System.out.println("Science: " + m.getScience());
+        System.out.println("English: " + m.getEnglish());
+
+        System.out.println("Total Marks: " + m.totalMarks());
+        System.out.println("Average Marks: " + m.averageMarks());
+    }
+}
+
+class Marks {
+    private int maths;
+    private int science;
+    private int english;
+
+    public void setMaths(int maths) {
+        if (isValid(maths)) this.maths = maths;
+        else System.out.println("not in 0-100.");
+    }
+
+    public void setScience(int science) {
+        if (isValid(science)) this.science = science;
+        else System.out.println("not in 0-100.");
+    }
+
+    public void setEnglish(int english) {
+        if (isValid(english)) this.english = english;
+        else System.out.println("not in 0-100.");
+    }
+
+    public int getMaths() { return maths; }
+    public int getScience() { return science; }
+    public int getEnglish() { return english; }
+
+    private boolean isValid(int mark) {
+        return mark >= 0 && mark <= 100;
+    }
+
+    public int totalMarks() {
+        return maths + science + english;
+    }
+
+    public double averageMarks() {
+        return totalMarks() / 3.0;
+    }
+}
