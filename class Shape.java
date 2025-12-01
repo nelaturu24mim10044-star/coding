@@ -47,3 +47,8 @@ public class Main {
         }
     }
 }
+
+OUTPUT:
+Area of Circle = 78.5
+Area of Rectangle = 24.0
+Area of Triangle = 12.0
