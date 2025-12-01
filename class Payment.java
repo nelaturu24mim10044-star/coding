@@ -31,8 +31,13 @@ public class Main {
 
         p = new Card();
         p.pay();
-
+        
         p = new NetBanking();
         p.pay();
     }
 }
+
+OUTPUT:
+Area of Circle = 78.5
+Area of Rectangle = 24.0
+Area of Triangle = 12.0
