@@ -1,49 +1,44 @@
-class Shape {
-    double calculateArea() {
-        return 0;
+class Animal {
+    void makeSound() {
+        System.out.println("Animal makes a sound");
     }
 }
 
-class Circle extends Shape {
-    double radius;
-    Circle(double r) { radius = r; }
-
-    double calculateArea() {
-        return 3.14 * radius * radius;
+class Cow extends Animal {
+    void makeSound() {
+        System.out.println("Cow says Moo");
     }
 }
 
-class Rectangle extends Shape {
-    double l, b;
-    Rectangle(double l, double b) { this.l = l; this.b = b; }
-
-    double calculateArea() {
-        return l * b;
+class Dog extends Animal {
+    void makeSound() {
+        System.out.println("Dog says Woof");
     }
 }
 
-class Triangle extends Shape {
-    double base, height;
-    Triangle(double b, double h) { base = b; height = h; }
-
-    double calculateArea() {
-        return 0.5 * base * height;
+class Cat extends Animal {
+    void makeSound() {
+        System.out.println("Cat says Meow");
     }
 }
 
 public class Main {
     public static void main(String[] args) {
+        Animal a1 = new Cow();
+        Animal a2 = new Dog();
+        Animal a3 = new Cat();
 
-        Shape[] shapes = {
-            new Circle(5),
-            new Rectangle(4, 6),
-            new Triangle(3, 8)
-        };
-
-        String[] names = {"Circle", "Rectangle", "Triangle"};
-
-        for (int i = 0; i < shapes.length; i++) {
-            System.out.println("Area of " + names[i] + " = " + shapes[i].calculateArea());
-        }
+        a1.makeSound();
+        a2.makeSound();
+        a3.makeSound();
     }
 }
+
+
+
+OUTPUT:
+Cow says Moo
+Dog says Woof
+Cat says Meow
+
+
