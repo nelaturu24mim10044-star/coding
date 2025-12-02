@@ -33,4 +33,10 @@ public class Main {
         n = new PushNotification();
         n.send();
     }
+
 }
+
+OUTPUT:
+Sending Email...
+Sending SMS...
+Sending Push Notification...
