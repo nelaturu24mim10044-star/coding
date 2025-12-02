@@ -3,7 +3,6 @@ class Shape {
         return 0;
     }
 }
-
 class Circle extends Shape {
     double radius;
     Circle(double r) { radius = r; }
@@ -12,7 +11,6 @@ class Circle extends Shape {
         return 3.14 * radius * radius;
     }
 }
-
 class Rectangle extends Shape {
     double l, b;
     Rectangle(double l, double b) { this.l = l; this.b = b; }
@@ -21,7 +19,6 @@ class Rectangle extends Shape {
         return l * b;
     }
 }
-
 class Triangle extends Shape {
     double base, height;
     Triangle(double b, double h) { base = b; height = h; }
@@ -30,25 +27,23 @@ class Triangle extends Shape {
         return 0.5 * base * height;
     }
 }
-
 public class Main {
     public static void main(String[] args) {
 
-        Shape[] shapes = {
-            new Circle(5),
-            new Rectangle(4, 6),
-            new Triangle(3, 8)
-        };
+        Shape s;
 
-        String[] names = {"Circle", "Rectangle", "Triangle"};
+        s = new Circle(5);
+        System.out.println("Area of Circle = " + s.calculateArea());
 
-        for (int i = 0; i < shapes.length; i++) {
-            System.out.println("Area of " + names[i] + " = " + shapes[i].calculateArea());
-        }
+        s = new Rectangle(4, 6);
+        System.out.println("Area of Rectangle = " + s.calculateArea());
+
+        s = new Triangle(3, 8);
+        System.out.println("Area of Triangle = " + s.calculateArea());
     }
 }
-
 OUTPUT:
 Area of Circle = 78.5
 Area of Rectangle = 24.0
 Area of Triangle = 12.0
+
