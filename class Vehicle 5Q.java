@@ -1,24 +1,24 @@
 class Vehicle {
     void start() {
-        System.out.println("Vehicle starts");
+        System.out.println("Vehicle started");
     }
 }
 
 class Car extends Vehicle {
     void start() {
-        System.out.println("Car starts ");
+        System.out.println("Car started");
     }
 }
 
 class Bike extends Vehicle {
     void start() {
-        System.out.println("Bike starts ");
+        System.out.println("Bike started");
     }
 }
 
 class Truck extends Vehicle {
     void start() {
-        System.out.println("Truck starts");
+        System.out.println("Truck started");
     }
 }
 
@@ -34,4 +34,9 @@ public class Main {
         v3.start();
         }
     }
+
+OUTPUT:
+Car started
+Bike started
+Truck started
 
