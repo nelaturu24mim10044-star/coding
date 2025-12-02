@@ -29,3 +29,8 @@ public class Main {
         System.out.println("PartTime Salary: " + e3.calculateSalary());
     }
 }
+
+OUTPUT:
+Intern Salary: 5000.0
+FullTime Salary: 40000.0
+PartTime Salary: 20000.0
