@@ -1,24 +1,24 @@
 class Payment {
     void pay() {
-        System.out.println("Payment initiated");
+        System.out.println("Payment initiated.");
     }
 }
 
 class UPI extends Payment {
     void pay() {
-        System.out.println("Paid using UPI");
+        System.out.println("Paid using UPI.");
     }
 }
 
 class Card extends Payment {
     void pay() {
-        System.out.println("Paid using Card");
+        System.out.println("Paid using Card.");
     }
 }
 
 class NetBanking extends Payment {
     void pay() {
-        System.out.println("Paid using NetBanking");
+        System.out.println("Paid using NetBanking.");
     }
 }
 
@@ -41,3 +41,4 @@ OUTPUT:
 Paid using UPI.
 Paid using Card.
 Paid using NetBanking.
+
