@@ -42,8 +42,10 @@ public class Main {
         System.out.println("Area of Triangle = " + s.calculateArea());
     }
 }
-OUTPUT:
-Area of Circle = 78.5
-Area of Rectangle = 24.0
-Area of Triangle = 12.0
+
+// OUTPUT:
+// Area of Circle = 78.5
+// Area of Rectangle = 24.0
+// Area of Triangle = 12.0
+
 
