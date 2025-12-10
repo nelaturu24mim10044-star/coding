@@ -23,6 +23,7 @@ public class Diagonals {
     }
 }
 
-OUTPUT:
-Primary diagonal: 1 5 9
-Secondary diagonal: 3 5 7
+// OUTPUT:
+// Primary diagonal: 1 5 9
+// Secondary diagonal: 3 5 7
+
