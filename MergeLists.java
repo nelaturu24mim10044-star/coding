@@ -25,5 +25,5 @@ public class MergeLists {
     }
 }
 
-OUTPUT:
-[1, 2, 3, 5, 8]
+// OUTPUT:
+// [1, 2, 3, 5, 8]
