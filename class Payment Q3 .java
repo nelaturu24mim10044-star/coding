@@ -37,8 +37,9 @@ public class Main {
     }
 }
 
-OUTPUT:
-Paid using UPI.
-Paid using Card.
-Paid using NetBanking.
+// OUTPUT:
+// Paid using UPI.
+// Paid using Card.
+// Paid using NetBanking.
+
 
