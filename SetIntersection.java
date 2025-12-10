@@ -11,5 +11,5 @@ public class SetIntersection {
     }
 }
 
-OUTPUT:
-[3, 4]
+// OUTPUT:
+// [3, 4]
