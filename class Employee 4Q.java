@@ -30,7 +30,8 @@ public class Main {
     }
 }
 
-OUTPUT:
-Intern Salary: 5000.0
-FullTime Salary: 40000.0
-PartTime Salary: 20000.0
+// OUTPUT:
+// Intern Salary: 5000.0
+// FullTime Salary: 40000.0
+// PartTime Salary: 20000.0
+
