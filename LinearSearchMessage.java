@@ -15,5 +15,5 @@ public class LinearSearchMessage {
     }
 }
 
-OUTPUT:
-Element found at index 2
+// OUTPUT:
+// Element found at index 2
