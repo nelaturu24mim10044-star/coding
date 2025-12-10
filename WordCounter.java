@@ -14,5 +14,5 @@ public class WordCounter {
     }
 }
 
-OUTPUT:
-{banana=2, orange=1, apple=3}
+// OUTPUT:
+// {banana=2, orange=1, apple=3}
