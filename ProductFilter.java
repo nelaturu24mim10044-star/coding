@@ -15,6 +15,7 @@ public class ProductFilter {
     }
 }
 
-OUTPUT:
-Bottle : 150
-Bag : 500
+// OUTPUT:
+// Bottle : 150
+// Bag : 500
+
