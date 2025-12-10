@@ -18,5 +18,5 @@ public class VowelStringCount {
     }
 }
 
-OUTPUT:
-3
+// OUTPUT:
+// 3
