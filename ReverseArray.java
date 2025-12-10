@@ -19,5 +19,5 @@ public class ReverseArray {
     }
 }
 
-OUTPUT:
-4 3 2 1 
+// OUTPUT:
+// 4 3 2 1 
