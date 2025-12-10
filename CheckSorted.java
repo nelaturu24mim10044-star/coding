@@ -17,6 +17,7 @@ public class CheckSorted {
     }
 }
 
-OUTPUT:
-a1 is Sorted
-a2 is Not Sorted
+// OUTPUT:
+// a1 is Sorted
+
+// a2 is Not Sorted
