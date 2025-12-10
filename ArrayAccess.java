@@ -10,5 +10,6 @@ public class ArrayAccess {
     }
 }
 
-OUTPUT:
-Index is out of range!
+// OUTPUT:
+// Index is out of range!
+
