@@ -9,5 +9,6 @@ public class CountEven {
     }
 }
 
-OUTPUT:
-3
+// OUTPUT:
+// 3
+
