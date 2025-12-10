@@ -14,5 +14,5 @@ public class Sum2DMatrix {
     }
 }
 
-OUTPUT:
-10
+// OUTPUT:
+// 10
