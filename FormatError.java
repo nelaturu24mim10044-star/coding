@@ -19,6 +19,7 @@ public class FormatError {
 }
 
 
-OUTPUT:
-Enter a number: sai
-Error :sai is not a int!
+// OUTPUT:
+// Enter a number: sai
+
+// Error :sai is not a int!
