@@ -36,9 +36,10 @@ public class Main {
 
 
 
-OUTPUT:
-Cow says Moo
-Dog says Woof
-Cat says Meow
+// OUTPUT:
+// Cow says Moo
+// Dog says Woof
+// Cat says Meow
+
 
 
