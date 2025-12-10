@@ -21,6 +21,7 @@ public class TryCatchBlock {
 }
 
 
-OUTPUT:
-You cannot divide by zero.
-Finally block executed.
+// OUTPUT:
+// You cannot divide by zero.
+
+// Finally block executed.
