@@ -19,7 +19,8 @@ public class Divide
     }
 }
 
-OUTPUT:
-Enter first number: 7
-Enter second number: 0
+// OUTPUT:
+// Enter first number: 7
+// Enter second number: 0
+
 Cannot divide by zero!
