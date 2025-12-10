@@ -35,8 +35,9 @@ public class Main {
         }
     }
 
-OUTPUT:
-Car started
-Bike started
-Truck started
+// OUTPUT:
+// Car started
+// Bike started
+// Truck started
+
 
